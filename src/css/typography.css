@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Oswald;
+    src:url(https://fonts.google.com/specimen/Oswald);
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url(https://fonts.google.com/specimen/Roboto);
+}
+
+#logo-text {
+    font-family: "Oswald";
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#navbar-item {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    color: aliceblue;
+}
+
+#main-message {
+    font-family: "Oswald";
+    font-weight: 600;
+    font-stretch: semi-expanded;
+    color: aliceblue;
+}
+
+#slogan {
+    font-family: "Oswald";
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 24px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.drop-button {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-stretch: expanded;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.dropdown-content {
+    font-family: "Oswald";
+    font-weight: 300;
+    font-stretch: expanded;
+    font-size: 16px;
+    color: black;
+}
+
+.price {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-stretch: expanded;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.food-name {
+    font-family: "Oswald";
+    font-weight: 300;
+    font-stretch: semi-expanded;
+    font-size: 24px;
+}
+
+.food-category {
+    font-family: "Roboto";
+    font-weight: 200;
+    font-stretch: semi-expanded;
+    font-size: 20px;
+    color: grey;
+}
+
+.food-price {
+    font-family: "Oswald";
+    font-weight: bolder;
+    font-stretch: expanded;
+    font-size: x-large;
+    color: red;
+}
+
+.social-media {
+    font-family: "Oswald";
+    font-weight: 600;
+    font-stretch: normal;
+    color: aliceblue;
+}
+
+.credits-text {
+    font-family: "Roboto";
+    font-weight: 200;
+    font-stretch: semi-expanded;
+    color: aliceblue;
+}

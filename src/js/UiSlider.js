@@ -1,4 +1,4 @@
-
+// comment
 
 document.addEventListener("DOMContentLoaded", function () {
     let uislider = document.getElementById("uislider");

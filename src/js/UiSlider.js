@@ -22,5 +22,4 @@ document.addEventListener("DOMContentLoaded", function () {
     min.textContent = "$" + values[0];
     max.textContent = "$" + values[1];
   });
-  
 });

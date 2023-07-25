@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata is contained in this element-->
+        <!--include links to css and js files-->
+        <link href="../css/images.css" rel="stylesheet" type="text/css">
+        <link href="../css/header_style.css" rel="stylesheet" type="text/css">
+        <link href="../css/body_style.css" rel="stylesheet" type="text/css">
+        <link href="../css/footer_styles.css" rel="stylesheet" type="text/css">
+        <link href="../css/typography.css" rel="stylesheet" type="text/css">
+        <link href="../../node_modules/nouislider/dist/nouislider.min.css" rel="stylesheet">
+
+        <script src="../../node_modules/nouislider/dist/nouislider.min.js"></script>
+        <script src="../js/Dropdown.js" rel="javascript"></script>
+        <script src="../js/UiSlider.js" rel="javascript"></script>
+
+        <title>
+            EUREKA CAFFE
+        </title>
+    </head>
+
+    <header>
+        <div class="logo-navbar">
+            <div class="logo">
+                <img src="../img/logo.png" class="logo-icon" />
+                <figcaption id="logo-text">EUREKA CAFFE</figcaption>
+            </div>
+
+            <div id="navbar">
+                <ul class="navbar">
+                    <li class="navbar" id="navbar-item">
+                        <a href="#">HOME</a>
+                    </li>
+
+                    <li id="dot" class="navbar">•</li>
+
+                    <li class="navbar" id="navbar-item">
+                        <a href="#">ABOUT</a>
+                    </li>
+
+                    <li id="dot" class="navbar">•</li>
+
+                    <li class="navbar" id="navbar-item">
+                        <a href="#">SERVICE</a>
+                    </li>
+
+                    <li id="dot" class="navbar">•</li>
+
+                    <li class="navbar" id="navbar-item">
+                        <a href="#">BLOG</a>
+                    </li>
+
+                    <li id="dot" class="navbar">•</li>
+
+                    <li class="navbar" id="navbar-item">
+                        <a href="#">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-message">
+            <h1 id="main-message">Ordering food</h1>
+
+            <hr class="white-line"></hr>
+
+            <p id="slogan">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <br>
+
+            <br>
+        </div>
+    </header>
+    
+    <body>
+        <div class="body-container">
+            <div class="filters-container">  
+                <div class="dropdown-menus-container">
+                    <div class="dropdown-menu">
+                        <button onclick="dropDownCategory()" class="drop-button">CATEGORY</button>
+
+                        <div id="dropdown-category" class="dropdown-content">
+                          <a href="#">Second Course</a>
+
+                          <a href="#">Entrees</a>
+
+                          <a href="#">Desserts</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu">
+                        <button onclick="dropDownSorting()" class="drop-button">SORTING</button>
+
+                        <div id="dropdown-sorting" class="dropdown-content"></div>
+                    </div>
+
+                    <div class="dropdown-menu">
+                        <button onclick="dropDownVegetarian()" class="drop-button">VEGETARIAN</button>
+
+                        <div id="dropdown-vegetarian" class="dropdown-content"></div>
+                    </div>
+                </div>
+
+                <div class="price-range-container">
+                    <p class="price-range-item price">PRICE</p>
+
+                    <p id="min-slider" class="price-range-item price">15$</p>
+
+                    <div id="uislider"></div>
+
+                    <p id="max-slider" class="price-range-item price">100$</p>
+                </div>
+            </div>
+
+            <div class="food-items-container">
+                <div class="border-wrapper-first">
+                    <div class="food-item">
+                        <img src="../img/pasta-with-feta.png" class="food-image">
+
+                        <p class="food-name">Pasta With Feta</p>
+
+                        <p class="food-category">Second Course</p>
+
+                        <p class="food-price">$9.00</p>
+                    </div>
+                </div>
+                
+                <div class="border-wrapper">
+                    <div class="food-item">
+                        <img src="../img/chicken-soup.png" class="food-image">
+
+                        <p class="food-name">Chicken Soup</p>
+
+                        <p class="food-category">Entrees</p>
+
+                        <p class="food-price">$13.00</p>
+                    </div>
+                </div>
+                
+                <div class="border-wrapper">
+                    <div class="food-item">
+                        <img src="../img/vitamin-salad.png" class="food-image">
+
+                        <p class="food-name">Vitamin Salad</p>
+
+                        <p class="food-category">Salads</p>
+
+                        <p class="food-price">$13.00</p>
+                    </div>
+                </div>
+                
+                <div class="border-wrapper">
+                    <div class="food-item">
+                        <img src="../img/pasta-al-dente.png" class="food-image">
+
+                        <p class="food-name">Pasta Al Dente</p>
+
+                        <p class="food-category">Second Course</p>
+
+                        <p class="food-price">$25.00</p>
+                    </div>
+                </div>
+                
+                <div class="border-wrapper">
+                   <div class="food-item">
+                        <img src="../img/crepes-with-nutella.png" class="food-image">
+
+                        <p class="food-name">Crepes With Nutella</p>
+
+                        <p class="food-category">Dessert</p>
+
+                        <p class="food-price">$18.00</p>
+                    </div> 
+                </div>
+
+                <div class="border-wrapper">
+                    <div class="food-item">
+                        <img src="../img/california-pizza.png" class="food-image">
+
+                        <p class="food-name">Pizza California</p>
+
+                        <p class="food-category">Second Course</p>
+
+                        <p class="food-price">$15.00</p>
+                    </div>
+                </div>
+                
+                <div class="border-wrapper-end">
+                    <div class="food-item">
+                        <img src="../img/pepperoni-pizza.png" class="food-image">
+
+                        <p class="food-name">Pizza Pepperoni</p>
+
+                        <p class="food-category">Second Course</p>
+
+                        <p class="food-price">$13.00</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contacts-container">
+                <div id="facebook" class="pair">
+                    <a href="https://www.facebook.com/">
+                        <img src="../img/facebook-icon.png" class="social-media-icon">
+                    </a>
+
+                    <p class="social-media">facebook contact</p>
+                </div>
+
+                <div id="instagram" class="pair">
+                    <a href="https://www.instagram.com/">
+                        <img src="../img/insta-icon.png" class="social-media-icon">
+                    </a>
+
+                    <p class="social-media">instagram contact</p>
+                </div>
+
+                <div id="mail" class="pair">
+                    <a href="https://www.gmail.com/">
+                        <img src="../img/mail-icon.png" class="social-media-icon">
+                    </a>
+                    
+                    <p class="social-media">contact@office.com</p>
+                </div>
+            </div>
+
+            <div class="credits-container">
+                <p class="credits-text">© To all the people that took those photos</p>
+            </div>
+        </div>
+    </footer>
+</html>
